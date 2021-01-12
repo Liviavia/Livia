@@ -48,7 +48,7 @@ void findNode(){
 		curr = curr->next;
 		count++;
 	}
-	printf("Jumlah data : %d\n",count);
+	printf("Jumlah node : %d\n",count);
 	
 	curr = head;
 	int temp = 0;
