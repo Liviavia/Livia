@@ -64,23 +64,7 @@ void removeDuplicate(){
 				toBeDeleted->next = NULL;
 				free(toBeDeleted);
 			}
-			else if(temp!=tail){
-				if(curr->score == temp->next->score){
-					toBeDeleted = temp->next;
-					temp->next = toBeDeleted->next;
-					toBeDeleted->next = NULL;
-					free(toBeDeleted);
-					last = temp;
-				}
-			}
-			else{
-				if(curr->score == tail->score){
-					toBeDeleted = tail;
-					last->next = NULL;
-					free(toBeDeleted);
-				}
-			}
-			
+			if(curr->score < temp->score) break;
 			temp = temp->next;
 		}
 		curr = curr->next;
