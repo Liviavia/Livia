@@ -74,12 +74,11 @@ void removeDuplicate(){
 int main(){
 	
 	pushTail("Valencia",100);
-	pushTail("Livia",150);
+	pushTail("Mama",100);
 	pushTail("Clara",130);
-	pushHead("Rio",150);
-	pushHead("Mama",100);
-	pushHead("Papa",170);
-
+	pushTail("Livia",150);
+	pushTail("Rio",150);
+	pushTail("Papa",170);
 	printList();
 	removeDuplicate();
 	printList();
